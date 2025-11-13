@@ -1,5 +1,5 @@
-# Use a Python base image (e.g., 3.10 or 3.11)
-FROM python:3.10-slim
+# Use a PyTorch base image with CUDA support
+FROM pytorch/pytorch:1.13.1-cuda11.6-cudnn8-runtime
 
 # Set the working directory inside the container
 WORKDIR /app
